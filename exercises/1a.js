@@ -4,23 +4,23 @@
  * "Vegetable Stir Fry has 4 ingredients and serves 2 people"
  */
 function recipeSummary(recipe) {
-  // code here
+  return `${recipe.name} has ${recipe.ingredients.length} ingredients and serves ${recipe.servings} people`;
 }
 
 // We have provided two recipes for debugging:
 const recipe1 = {
-  name: 'Spaghetti Bolognese',
-  ingredients: ['spaghetti', 'beef', 'tomato sauce'],
+  name: "Spaghetti Bolognese",
+  ingredients: ["spaghetti", "beef", "tomato sauce"],
   servings: 4,
-  isVegetarian: false
-}
+  isVegetarian: false,
+};
 
 const recipe2 = {
-  name: 'Vegetable Stir Fry',
-  ingredients: ['broccoli', 'carrots', 'bell peppers', 'soy sauce'],
+  name: "Vegetable Stir Fry",
+  ingredients: ["broccoli", "carrots", "bell peppers", "soy sauce"],
   servings: 2,
-  isVegetarian: true
-}
+  isVegetarian: true,
+};
 
 // don't change below:
-export default recipeSummary
+export default recipeSummary;

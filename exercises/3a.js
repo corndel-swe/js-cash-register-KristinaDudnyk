@@ -3,28 +3,32 @@
  * in the array
  */
 function lastRecipe(recipeBook) {
-  // code here
+  if (!recipeBook.recipes.length) {
+    return undefined;
+  }
+  let lastRecipe = recipeBook.recipes[recipeBook.recipes.length - 1];
+  return lastRecipe.name;
 }
 
 // we've provided a sample object for debugging:
 const recipeBook = {
-  title: 'My Recipe Book',
+  title: "My Recipe Book",
   recipes: [
     {
-      name: 'Spaghetti Bolognese',
-      ingredients: ['spaghetti', 'beef', 'tomato sauce'],
+      name: "Spaghetti Bolognese",
+      ingredients: ["spaghetti", "beef", "tomato sauce"],
       servings: 4,
-      isVegetarian: false
+      isVegetarian: false,
     },
 
     {
-      name: 'Vegetable Stir Fry',
-      ingredients: ['broccoli', 'carrots', 'bell peppers', 'soy sauce'],
+      name: "Vegetable Stir Fry",
+      ingredients: ["broccoli", "carrots", "bell peppers", "soy sauce"],
       servings: 2,
-      isVegetarian: true
-    }
-  ]
-}
+      isVegetarian: true,
+    },
+  ],
+};
 
 // don't change below
-export default lastRecipe
+export default lastRecipe;
